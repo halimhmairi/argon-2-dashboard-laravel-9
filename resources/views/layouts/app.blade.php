@@ -85,7 +85,7 @@
                         @else
 
                         <div class="min-height-300 bg-primary position-absolute w-100"></div>
-                        <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+                        <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 ps" id="sidenav-main">
                           <div class="sidenav-header">
                             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                             <a class="navbar-brand m-0"  href="{{ url('/home') }}" target="_blank">
@@ -138,7 +138,7 @@
                           </div>
                         </aside>
 
-                          <!-- Navbar -->
+                          <!-- Navbar-->
                 <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
                     <div class="container-fluid py-1 px-3">
                     <nav aria-label="breadcrumb">
@@ -252,14 +252,25 @@
                         </ul>
                     </div>
                     </div>
-                </nav>
+                </nav> 
                 <!-- End Navbar --> 
                    @include('sweetalert::alert')
                                    
                                     @endguest 
-                    <main class="container-fluid py-4">
+                    <main class="main-content position-relative max-height-vh-100 h-100 ps ps--active-y">
                         @yield('content')
                     </main>
                 </div>
+                <script>
+                  var win = navigator.platform.indexOf('Win') > -1;
+                  if (win && document.querySelector('#sidenav-scrollbar')) {
+                    var options = {
+                      damping: '0.5'
+                    }
+                    Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+                  }
+                </script>
+                <!-- Github buttons -->
+                <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
