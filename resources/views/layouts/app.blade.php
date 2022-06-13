@@ -7,9 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title> 
 
-    <!-- Scripts -->
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -155,13 +157,7 @@
                             <input type="text" class="form-control" placeholder="Type here...">
                         </div>
                         </div>
-                        <ul class="navbar-nav  justify-content-end">
-                        <li class="nav-item d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
-                            <i class="fa fa-user me-sm-1"></i>
-                            <span class="d-sm-inline d-none">Sign In</span>
-                            </a>
-                        </li>
+                        <ul class="navbar-nav  justify-content-end"> 
                         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                             <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                             <div class="sidenav-toggler-inner">
@@ -174,6 +170,9 @@
                         <li class="nav-item px-3 d-flex align-items-center">
                             <a href="javascript:;" class="nav-link text-white p-0">
                             <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                            <i class="ni ni-app"></i>
+
+                            ff
                             </a>
                         </li>
                         <li class="nav-item dropdown pe-2 d-flex align-items-center">
@@ -260,7 +259,8 @@
                     <main class="main-content position-relative max-height-vh-100 h-100 ps ps--active-y">
                         @yield('content')
                     </main>
-                </div>
+                </div> 
+
                 <script>
                   var win = navigator.platform.indexOf('Win') > -1;
                   if (win && document.querySelector('#sidenav-scrollbar')) {

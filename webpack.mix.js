@@ -11,6 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sourceMaps();
+mix.combine([
+    "public/css/nucleo-icons.css",
+    "public/css/nucleo-svg.css",
+    "public/css/argon-dashboard.css",
+],"public/css/app.css")
+
+mix.combine([
+    "public/js/core/popper.min.js",
+    "public/js/core/bootstrap.min.js",
+    "public/js/plugins/perfect-scrollbar.min.js",
+    "public/js/plugins/smooth-scrollbar.min.js",
+    "public/js/plugins/chartjs.min.js", 
+],"public/js/app.js"); 
