@@ -2,7 +2,12 @@
 
 @section('content')
 
-<div class="container">
+<div class="row justify-content-center">
+  <div class="col-md-6">
+      <div class="card">
+          <div class="card-header">{{ __('Add Category') }}</div>
+
+          <div class="card-body"> 
  
     @if ($errors->any()) 
                 @foreach ($errors->all() as $error) 
@@ -29,5 +34,11 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 @endsection
