@@ -14,6 +14,7 @@ const mix = require('laravel-mix');
 mix.combine([
     "public/css/nucleo-icons.css",
     "public/css/nucleo-svg.css",
+    "node_modules/font-awesome/css/font-awesome.css", 
     "public/css/argon-dashboard.css",
 ],"public/css/app.css")
 
