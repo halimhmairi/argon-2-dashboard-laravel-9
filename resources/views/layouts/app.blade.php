@@ -86,7 +86,13 @@
           </div> 
                         @else
 
+                        @if(Request::is('profile/edit'))
+                        <div class="position-absolute w-100 min-height-300 top-0" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+                          <span class="mask bg-primary opacity-6"></span>
+                        </div>
+                        @else
                         <div class="min-height-300 bg-primary position-absolute w-100"></div>
+                        @endif
                         <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 ps" id="sidenav-main">
                           <div class="sidenav-header">
                             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -152,7 +158,7 @@
                    @include('sweetalert::alert')
                                    
                                     @endguest 
-                    <main class="main-content position-relative max-height-vh-100 h-100 ps ps--active-y">
+                    <main class="main-content">
                         @yield('content')
                     </main>
                 </div> 
