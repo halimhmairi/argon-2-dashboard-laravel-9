@@ -41,24 +41,12 @@
                       </span>
                     </button>
                     <div class="collapse navbar-collapse" id="navigation">
-                      <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                          <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
-                            <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
-                            Dashboard
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link me-2" href="../pages/profile.html">
-                            <i class="fa fa-user opacity-6 text-dark me-1"></i>
-                            Profile
-                          </a>
-                        </li>
+                      <ul class="navbar-nav mx-auto">  
                         <!-- Authentication Links -->
                         @if (Route::has('register'))
                         <li class="nav-item">
                           <a class="nav-link me-2" href="{{ Route('register') }}">
-                            <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
+                            <i class="fa fa-user-circle opacity-6 text-dark me-1"></i>
                             Sign Up
                           </a>
                         </li>
@@ -66,7 +54,7 @@
                         @if (Route::has('login'))
                         <li class="nav-item">
                           <a class="nav-link me-2" href="{{ Route('login') }}">
-                            <i class="fas fa-key opacity-6 text-dark me-1"></i>
+                            <i class="fa fa-key opacity-6 text-dark me-1"></i>
                             Sign In
                           </a>
                         </li>
@@ -74,7 +62,7 @@
                       </ul>
                       <ul class="navbar-nav d-lg-block d-none">
                         <li class="nav-item">
-                          <a href="https://www.creative-tim.com/product/argon-dashboard" class="btn btn-sm mb-0 me-1 btn-primary">Free Download</a>
+                          <a href="https://github.com/halimhmairi/argon-2-dashboard-laravel-9" class="btn btn-sm mb-0 me-1 btn-primary">Free Download</a>
                         </li>
                       </ul>
                     </div>
