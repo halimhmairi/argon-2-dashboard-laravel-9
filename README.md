@@ -19,6 +19,8 @@ Simply, it's a basic create, read, update and delete operation with Laravel 9 an
 
 - Category management
 
+![image](https://user-images.githubusercontent.com/26728107/174672073-ddf03736-6284-4457-b52e-c99020074ef5.png)
+
 ## Tech
 
 - BOOTSRAP 5
