@@ -7,7 +7,7 @@ Basic CRUD , AUTH system and Role mangment system Operation with Laravel 9 and b
 
 ## What's this repo about
 
-Simply, it's a basic create, read, update and delete operation with Laravel 9 and Bootstrap 5. 
+Simply, it's a basic create, read, update and delete operation with Laravel 9 and NICE UI (<a href="https://demos.creative-tim.com/argon-dashboard/pages/dashboard" target="_blank">argon dashboard</a>). 
 
 ## Features
 
